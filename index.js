@@ -11,6 +11,24 @@ document.querySelector(".eraser").addEventListener("click", (e) => {
     tool = "eraser";
 })
 
+const buttonDisplay = document.querySelector(".settingsDisplay button");
+
+const resize = (size) => {
+    display.textContent = "";
+    createPixels(size);
+}
+
+const getSize = (e) => {
+    if (document.querySelector("input").value > 1 && document.querySelector("input").value < 101) {
+        size = +document.querySelector("input").value;
+        ratio = 1 / size;
+        document.querySelector("input").value = "";
+
+        console.log(size);
+        resize(size);
+    }
+}
+
 const createPixels = (size) => {
     for (let i = 0; i < size; i++) {
         const linePixel = document.createElement("div");
@@ -37,5 +55,7 @@ const createPixels = (size) => {
         }
     }
 }
+
+buttonDisplay.addEventListener("click", getSize);
 
 createPixels(size);
