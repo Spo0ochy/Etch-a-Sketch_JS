@@ -8,16 +8,16 @@ body {
 
 .display {
     outline: 2px solid red;
-    padding: 2px;
     display: flex;
     flex-wrap: wrap;
-    gap: 2px;
 
-    width: fit-content;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(199, 206, 212, 0.48);
 }
 
 .pixel {
-    width: 20px;
-    height: 20px;
-    background-color: aliceblue;
+    background-color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
