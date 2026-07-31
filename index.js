@@ -3,6 +3,14 @@ const display = document.querySelector(".display")
 let size = 5;
 let ratio = 1 / size;
 
+let tool = "brush";
+document.querySelector(".brush").addEventListener("click", (e) => {
+    tool = "brush";
+})
+document.querySelector(".eraser").addEventListener("click", (e) => {
+    tool = "eraser";
+})
+
 const createPixels = (size) => {
     for (let i = 0; i < size; i++) {
         const linePixel = document.createElement("div");
@@ -17,6 +25,15 @@ const createPixels = (size) => {
 
             pixel.classList.add("pixel");
             linePixel.append(pixel);
+
+            pixel.addEventListener("mouseenter", (e) => {
+                if (tool === "brush") {
+                    pixel.style.backgroundColor = "rgb(11, 17, 17)";
+                }
+                else if (tool === "eraser") {
+                    pixel.style.backgroundColor = "white";
+                }
+            })
         }
     }
 }

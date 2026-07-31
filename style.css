@@ -21,3 +21,7 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+.black {
+    background-color: rgb(11, 17, 17);
+}
