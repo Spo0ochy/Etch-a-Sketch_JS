@@ -10,6 +10,10 @@ document.querySelector(".brush").addEventListener("click", (e) => {
 document.querySelector(".eraser").addEventListener("click", (e) => {
     tool = "eraser";
 })
+document.querySelector(".colorful").addEventListener("click", (e) => {
+    tool = "colorful";
+})
+
 
 const buttonDisplay = document.querySelector(".settingsDisplay button");
 
@@ -50,6 +54,13 @@ const createPixels = (size) => {
                 }
                 else if (tool === "eraser") {
                     pixel.style.backgroundColor = "white";
+                }
+                else if (tool === "colorful") {
+                    let red = Math.floor(Math.random() * 255) + 1;
+                    let green = Math.floor(Math.random() * 255) +1;
+                    let blue = Math.floor(Math.random() * 255) +1;
+
+                    pixel.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
                 }
             })
         }
