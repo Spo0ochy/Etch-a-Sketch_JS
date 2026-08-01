@@ -66,10 +66,10 @@ const createPixels = (size) => {
 
             pixel.addEventListener("mouseenter", (e) => {
                 if (tool === "brush") {
-                    pixel.style.backgroundColor = "rgb(11, 17, 17)";
+                    pixel.style.backgroundColor = "#515D44";
                 }
                 else if (tool === "eraser") {
-                    pixel.style.backgroundColor = "white";
+                    pixel.style.backgroundColor = "#D9E5D4";
                 }
                 else if (tool === "colorful") {
                     let red = Math.floor(Math.random() * 255) + 1;
