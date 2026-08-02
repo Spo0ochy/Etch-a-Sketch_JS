@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 :root {
     --YELLOW: #FDE11E;
     --RED: #D72831;
@@ -14,12 +16,44 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    padding-top: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    box-shadow: inset 0px -11px 28px -8px #515D44,
+        inset 3px 10px 5px -1px rgb(255 255 255 / 50%),
+        0px 17px 24px -1px rgba(0,0,0,0.54);
+    border-radius: 10px;
+
+    width: 900px;
+    height: 900px;
+    background-color: var(--LIGHT-GRAY);
+
+    padding-top: 20px;
+}
+
+h1 {
+    margin: 0;
+
+    font-family: "Russo one";
+    letter-spacing: 10px;
+    font-size: 40px;
+    color: var(--LIGHT-GRAY);
+    text-shadow: -2px -2px 1.2px rgb(255 255 255 / 50%),
+               2px 2px 3px rgb(1 1 1 / 10%);
 }
 
 .frame {
     background-color: var(--GRAY);
     padding: 30px 60px;
-    border-radius: 10px;;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px 1px rgb(0, 0, 0, 0.2);
 }
 
 .display {
@@ -39,7 +73,8 @@ body {
     
     position: absolute;
 
-    box-shadow: inset 8px 8px 10px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 3px 5px 2px rgba(0, 0, 0, 0.5),
+        inset -1px -3px 6px 1px rgba(255, 255, 255, 0.2);
     pointer-events: none;
 }
 
@@ -47,4 +82,12 @@ body {
     background-color: var(--LIGHT-GRAY);
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.line {
+    width: 890px;
+    height: 5px;
+    background-color: var(--DARK-GRAY);
+    border-right: 5px solid rgba(255, 225, 0, 0.529);
+    border-left: 5px solid rgba(255, 225, 0, 0.529);
 }
