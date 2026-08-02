@@ -1,12 +1,14 @@
 # Etch-a-Sketch_JS
 
+![Preview of the application](./img/preview.png)
+
 ## Description
 
 This etch-a-sketch project was part of [The Odin Project](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) curriculum.
 
 The goal here was to practice Javascript, particularly the `for` loop to generate the screen size dynamically and use `addEventListener` to change the state of each pixel.
 
-Live demo here (you should use it with the browser **chrome on a computer** for a better output).
+Live demo [here](https://spo0ochy.github.io/Etch-a-Sketch_JS/) (you should use it with the browser **chrome on a computer** for a better output).
 
 ## Features
 
