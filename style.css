@@ -91,3 +91,11 @@ h1 {
     border-right: 5px solid rgba(255, 225, 0, 0.529);
     border-left: 5px solid rgba(255, 225, 0, 0.529);
 }
+
+.select-mod {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 500px;
+}

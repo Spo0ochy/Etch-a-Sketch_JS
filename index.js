@@ -3,18 +3,14 @@ const display = document.querySelector(".display")
 let size = 5;
 let ratio = 1 / size;
 
+const settingsTool = document.querySelector("form");
+const choiceTool = document.querySelectorAll("input[name=settingTool]");
 let tool = "brush";
-document.querySelector(".brush").addEventListener("click", (e) => {
-    tool = "brush";
-})
-document.querySelector(".eraser").addEventListener("click", (e) => {
-    tool = "eraser";
-})
-document.querySelector(".colorful").addEventListener("click", (e) => {
-    tool = "colorful";
-})
-document.querySelector(".pencil").addEventListener("click", (e) => {
-    tool = "pencil";
+
+settingsTool.addEventListener("change", () => {
+    choiceTool.forEach(toolTest => {
+        if (toolTest.checked) tool = toolTest.value; 
+    })
 })
 
 const buttonDisplay = document.querySelector(".settingsDisplay button");
